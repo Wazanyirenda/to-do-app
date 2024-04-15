@@ -1,0 +1,123 @@
+12:27:40 (13952) INFO ConfigReader No config file specified. Running with command line arguments.
+12:27:40 (13952) INFO ConfigReader Use `stryker init` command to generate your config file.
+12:27:40 (13952) DEBUG ConfigReader Loaded config: {
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "allowConsoleColors": true,
+  "checkers": [],
+  "checkerNodeArgs": [],
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "coverageAnalysis": "perTest",
+  "clearTextReporter": {
+    "allowColor": true,
+    "allowEmojis": false,
+    "logTests": true,
+    "maxTestsToLog": 3,
+    "reportTests": true,
+    "reportMutants": true,
+    "reportScoreTable": true
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "dryRunOnly": false,
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "ignorePatterns": [],
+  "ignoreStatic": false,
+  "incremental": false,
+  "incrementalFile": "reports/stryker-incremental.json",
+  "force": false,
+  "inPlace": false,
+  "maxConcurrentTestRunners": 9007199254740991,
+  "maxTestRunnerReuse": 0,
+  "mutate": [
+    "{src,lib}/**/!(*.+(s|S)pec|*.+(t|T)est).+(cjs|mjs|js|ts|mts|cts|jsx|tsx|html|vue|svelte)",
+    "!{src,lib}/**/__tests__/**/*.+(cjs|mjs|js|ts|mts|cts|jsx|tsx|html|vue|svelte)"
+  ],
+  "mutator": {
+    "plugins": null,
+    "excludedMutations": []
+  },
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "appendPlugins": [],
+  "reporters": [
+    "clear-text",
+    "progress",
+    "html"
+  ],
+  "htmlReporter": {
+    "fileName": "reports/mutation/mutation.html"
+  },
+  "jsonReporter": {
+    "fileName": "reports/mutation/mutation.json"
+  },
+  "disableTypeChecks": true,
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "cleanTempDir": true,
+  "testRunner": "command",
+  "testRunnerNodeArgs": [],
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "dryRunTimeoutMinutes": 5,
+  "tsconfigFile": "tsconfig.json",
+  "warnings": true,
+  "disableBail": false,
+  "allowEmpty": false,
+  "ignorers": []
+}
+12:27:40 (13952) DEBUG PluginLoader Loading @stryker-mutator/* from C:\Users\wazam\node_modules\@stryker-mutator
+12:27:40 (13952) DEBUG PluginLoader Loading plugin "@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+12:27:40 (13952) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
+12:27:40 (13952) DEBUG PluginLoader Loading plugin file:///C:/Users/wazam/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+12:27:40 (13952) DEBUG MetaSchemaBuilder Contributing 1 schemas from plugins to options validation.
+12:27:41 (13952) WARN ProjectReader Warning: No files found for mutation with the given glob expressions. As a result, a dry-run will be performed without actually modifying anything. If you intended to mutate files, please check and adjust the configuration. Current glob pattern(s) used: "{src,lib}/**/!(*.+(s|S)pec|*.+(t|T)est).+(cjs|mjs|js|ts|mts|cts|jsx|tsx|html|vue|svelte)", "!{src,lib}/**/__tests__/**/*.+(cjs|mjs|js|ts|mts|cts|jsx|tsx|html|vue|svelte)". To enable file mutation, consider configuring the `mutate` property in your configuration file or using the --mutate option via the command line.
+12:27:41 (13952) DEBUG ProjectReader All input files: [
+  "C:\\Users\\wazam\\Downloads\\to-do-lsit\\to-do-list\\to-do-app\\src\\App.css",
+  "C:\\Users\\wazam\\Downloads\\to-do-lsit\\to-do-list\\to-do-app\\src\\App.js",
+  "C:\\Users\\wazam\\Downloads\\to-do-lsit\\to-do-list\\to-do-app\\src\\App.test.js",
+  "C:\\Users\\wazam\\Downloads\\to-do-lsit\\to-do-list\\to-do-app\\src\\index.css",
+  "C:\\Users\\wazam\\Downloads\\to-do-lsit\\to-do-list\\to-do-app\\src\\index.js",
+  "C:\\Users\\wazam\\Downloads\\to-do-lsit\\to-do-list\\to-do-app\\src\\reportWebVitals.js",
+  "C:\\Users\\wazam\\Downloads\\to-do-lsit\\to-do-list\\to-do-app\\src\\setupTests.js"
+]
+12:27:41 (13952) DEBUG ProjectReader Files to mutate: []
+12:27:41 (13952) DEBUG TemporaryDirectory Using temp directory "C:\Users\wazam\Downloads\to-do-lsit\to-do-list\to-do-app\src\.stryker-tmp"
+12:27:41 (13952) DEBUG Instrumenter Instrumenting 0 source files with mutants
+12:27:41 (13952) INFO Instrumenter Instrumented 0 source file(s) with 0 mutant(s)
+12:27:41 (13952) INFO ConcurrencyTokenProvider Creating 4 test runner process(es).
+12:27:41 (13952) DEBUG ChildProcessProxy Started CheckerWorker in worker process 0 with pid 12956 
+12:27:42 (12956) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
+12:27:42 (12956) DEBUG PluginLoader Loading plugin file:///C:/Users/wazam/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+12:27:43 (13952) DEBUG Sandbox Creating a sandbox for files in C:\Users\wazam\Downloads\to-do-lsit\to-do-list\to-do-app\src\.stryker-tmp\sandbox258678
+12:27:43 (13952) DEBUG Sandbox Start symlink node_modules
+12:27:43 (13952) DEBUG Sandbox Could not find a node_modules folder to symlink into the sandbox directory. Search "C:\Users\wazam\Downloads\to-do-lsit\to-do-list\to-do-app\src" and its parent directories
+12:27:43 (13952) DEBUG BroadcastReporter Broadcasting to reporters ["clear-text","progress","html"]
+12:27:43 (13952) INFO DryRunExecutor Starting initial test run (command test runner with "perTest" coverage analysis). This may take a while.
+12:27:43 (13952) DEBUG DryRunExecutor Using timeout of 300000 ms.
+12:27:43 (13952) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+12:32:43 (13952) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+12:32:45 (13952) ERROR DryRunExecutor Initial test run timed out!
+12:32:45 (13952) DEBUG Stryker Not removing the temp dir because an error occurred
+12:32:45 (13952) ERROR Stryker Unexpected error occurred while running Stryker Error: Something went wrong in the initial test run
+    at DryRunExecutor.validateResultCompleted (file:///C:/Users/wazam/node_modules/@stryker-mutator/core/dist/src/process/3-dry-run-executor.js:75:15)
+    at DryRunExecutor.executeDryRun (file:///C:/Users/wazam/node_modules/@stryker-mutator/core/dist/src/process/3-dry-run-executor.js:95:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WorkItem.execute (file:///C:/Users/wazam/node_modules/@stryker-mutator/core/dist/src/concurrent/pool.js:32:28)
+    at async file:///C:/Users/wazam/node_modules/@stryker-mutator/core/dist/src/concurrent/pool.js:69:13
+12:32:45 (13952) INFO Stryker This might be a known problem with a solution documented in our troubleshooting guide.
+12:32:45 (13952) INFO Stryker You can find it at https://stryker-mutator.io/docs/stryker-js/troubleshooting/
+12:32:45 (13952) DEBUG ChildProcessProxy Disposing of worker process 12956
+12:32:45 (13952) DEBUG ChildProcessProxy Kill 12956

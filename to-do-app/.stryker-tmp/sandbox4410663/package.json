@@ -43,7 +43,6 @@
     "@stryker-mutator/html-reporter": "^3.1.0",
     "@stryker-mutator/javascript-mutator": "^4.0.0",
     "cypress-html-reporter": "^11.0.0",
-    "jest": "^27.5.1",
     "mochawesome": "^7.1.3"
   }
 }

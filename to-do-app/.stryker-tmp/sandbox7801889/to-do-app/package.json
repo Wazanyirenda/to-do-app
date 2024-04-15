@@ -1,6 +1,6 @@
 {
   "name": "to-do-app",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -39,11 +39,7 @@
     ]
   },
   "devDependencies": {
-    "@stryker-mutator/core": "^8.2.6",
-    "@stryker-mutator/html-reporter": "^3.1.0",
-    "@stryker-mutator/javascript-mutator": "^4.0.0",
     "cypress-html-reporter": "^11.0.0",
-    "jest": "^27.5.1",
     "mochawesome": "^7.1.3"
   }
 }
